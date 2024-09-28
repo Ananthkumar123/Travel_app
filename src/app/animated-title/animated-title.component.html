@@ -1,0 +1,13 @@
+<!-- src/app/animated-title/animated-title.component.html -->
+<div class="animated-title">
+    <!-- Display the fixed letters -->
+    <span *ngFor="let letter of letters" class="fixed-letter">
+      {{ letter }}
+    </span>
+    
+    <!-- Display the currently animating letter -->
+    <span *ngIf="currentLetter" [@letterAnimation] class="animated-letter">
+      {{ currentLetter }}
+    </span>
+  </div>
+  

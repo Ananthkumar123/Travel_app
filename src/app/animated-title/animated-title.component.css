@@ -1,0 +1,17 @@
+/* src/app/animated-title/animated-title.component.css */
+.animated-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    font-weight: bold;
+  }
+  
+  .fixed-letter {
+    margin: 0 5px;
+  }
+  
+  .animated-letter {
+    margin: 0 5px;
+  }
+  
