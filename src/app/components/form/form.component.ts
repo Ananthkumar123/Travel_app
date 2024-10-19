@@ -35,21 +35,14 @@ export class FormComponent {
     })
 
   }
-  //get
-  // ids:any;
-  // private getUser() {
-  //    this._serv.getUser1().subscribe((res)=>{
-  //     console.log(res);
-  //    })
-    
-  // }
-  //delete
+  
+  
    
 
   ngOnInit() {
-    this.onSubmit;
+    this.onSubmit();
   //  this.delete
-   //this.getUser();
+   
   }
 
 

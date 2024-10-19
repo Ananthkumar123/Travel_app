@@ -25,6 +25,11 @@ export class BookComponent {
       terms: [false, Validators.requiredTrue]
     });
   }
+  ngOnInit() { //down
+    this.onSubmit;
+   // this.delete
+   // this.getUser();
+  }
 
   //postdata
   onSubmit() {
@@ -47,10 +52,6 @@ export class BookComponent {
   //delete
    
 
-  ngOnInit() {
-    this.onSubmit;
-   // this.delete
-   // this.getUser();
-  }
+ 
 
 }

@@ -26,7 +26,7 @@ export class FormService {
   //get
   public getUser1():Observable<any>{
       
-    return this._http.get(this.getlink)
+    return this._http.get(this.getlink )
   }
    
   //delete
@@ -35,9 +35,15 @@ export class FormService {
     return this._http.delete(`${this.deletelink}/${id}`, {responseType:'text'});
   }
  //update
-  public edituser(id:any):Observable<any>{
+  public edituser(id:any, data):Observable<any>{
 
-    return this._http.put(this.updatelink,{responseType:'text'});
+    return this._http.put(this.updatelink+id,data,{responseType:'text'});
   }
+
    
+
+   sub()
+   {  
+    
+   }
 }

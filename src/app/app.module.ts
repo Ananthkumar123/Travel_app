@@ -15,6 +15,7 @@ import { HttpClientModule }  from '@angular/common/http';
 import { GetdataComponent } from './components/getdata/getdata.component';
 import { TripsComponent } from './components/trips/trips.component';
 import { DealsComponent } from './components/deals/deals.component';
+
  
 
 @NgModule({
@@ -29,6 +30,7 @@ import { DealsComponent } from './components/deals/deals.component';
     GetdataComponent,
     TripsComponent,
     DealsComponent,
+    
     
   ],
   imports: [
