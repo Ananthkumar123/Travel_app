@@ -1,0 +1,85 @@
+<h1>Pack your bags</h1>
+
+<aside>
+  <div class="container-6">
+    <div class="card">
+      <img class="card-img-top" src="../../../assets/images/pexels-souvenirpixels-1571442.jpg" alt="Card image cap">
+      <div class="card-body">
+        <div class="icons">
+          <span class="car">🚙</span>
+          <span class="hotel">🏨</span>
+          <span class="hill">🏔️</span>
+          <span class="plane">🛫</span>
+        </div>
+        <h5 class="card-title">Manali</h5>
+        <div class="card-text">
+          <ul>
+            <li>Hyderabad – Manali – Hyderabad Volvo Tickets</li>
+            <li>Pick & Drop from Volvo Stand to Hotel</li>
+            <li>02 Nights Accommodation in Deluxe Hotel</li>
+            <li>Child Below 5 Years of Age Complimentary Stay with Parents</li>
+            <li>Non Alcoholic Welcome Drink on Arrival</li>
+            <li>Morning Tea, Breakfast & Dinner</li>
+            <li>One Half Day Local Sightseeing by Private Car</li>
+            <li>One Full Day Sightseeing of Solang Valley, Atal Tunnel* & Rohtang Pass* by Private Car</li>
+            <li>One Full Day Sightseeing Kullu & Manikaran by Private Car</li>
+          </ul>
+        </div>
+        <a href="#" class="card-link">Register link</a>
+      </div>
+    </div>
+  </div>
+</aside>
+
+<!-- Form Component -->
+<form [formGroup]="myForm" (ngSubmit)="onSubmit()" class="p-4">
+  <div class="container mt-5">
+    <div class="row justify-content-end">
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" class="form-control" formControlName="name" placeholder="Enter name">
+        </div>
+        <div class="form-group">
+          <label for="lastname">Last Name</label>
+          <input type="text" id="lastname" class="form-control" formControlName="lastname" placeholder="Enter last name">
+        </div>
+        <div class="form-group">
+          <label for="age">Age</label>
+          <input type="number" id="age" class="form-control" formControlName="age" placeholder="Enter age">
+        </div>
+        <div class="form-group">
+          <label for="gender">Gender</label>
+          <select id="gender" class="form-control" formControlName="gender">
+            <option value="" disabled>Select gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="date">Date</label>
+          <input type="date" id="date" class="form-control" formControlName="date">
+        </div>
+        <div class="form-group">
+          <label for="mobile">Mobile</label>
+          <input type="tel" id="mobile" class="form-control" formControlName="mobile" placeholder="Enter mobile number">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" class="form-control" formControlName="email" placeholder="Enter email">
+        </div>
+        <div class="form-check">
+          <input type="checkbox" id="terms" class="form-check-input" formControlName="terms">
+          <label for="terms" class="form-check-label">I agree to the terms and conditions</label>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary" id="sbtn">Submit</button>
+          <button type="reset" class="btn btn-danger" id="rbtn">Reset</button>
+          <button type="button" class="btn btn-info" [routerLink]="'/get'">Admin</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+
+ 
